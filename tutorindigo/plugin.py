@@ -135,3 +135,10 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
         ),
     ]
 )
+
+
+hooks.Filters.ENV_PATCHES.add_item(("openedx-common-settings", '''                         
+MKTG_URL_LINK_MAP = {
+    "contributors" : "contributors.html"
+}
+'''))
