@@ -138,7 +138,9 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
 
 
 hooks.Filters.ENV_PATCHES.add_item(("openedx-common-settings", '''                         
+ENABLE_COURSE_DISCOVERY = True
 MKTG_URL_LINK_MAP = {
     "contributors" : "contributors.html"
 }
+LOGO_URL = '/theming/asset/images/pips-assets/logo.svg'
 '''))

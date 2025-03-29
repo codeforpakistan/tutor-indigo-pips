@@ -1,8 +1,8 @@
 // Include custom home
 section.home {
-    max-width: 1090px;
+    // max-width: 1090px;
     margin: 0 auto;
-    padding: 0 15px;
+    // padding: 0 15px;
 }
 .home>header .title {
     background: none !important;
@@ -29,15 +29,16 @@ section.home {
 #main .home.style-logout  {
     header {
         .outer-wrapper {
+            padding: 4rem;
+            max-width: 100%;
             .title {
                 width: 100%;
+                max-width: 80rem;
+                min-height: 24rem;
                 float: none;
-                margin: 0;
-                padding: 30px 0 0;
-                min-height: 20px;
-                @include media-breakpoint-up(sm) {
-                    padding: 50px 0 0;
-                }
+                margin: 0 auto;
+                padding: 0;
+
                 .heading-group {
                     margin: 0 0 25px;
                     text-align: left;
@@ -45,13 +46,14 @@ section.home {
                     @include media-breakpoint-up(sm) {
                         margin: 0 0 45px;
                     }
-                    h1 {
-                        color: #111827;
-                        font-size: 20px;
+                    h1.courses-heading {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        text-transform: uppercase;
+                        color: rgb(30,58 ,138);
                         font-weight: 700;
-                        line-height: 30px;
-                        margin: 0 0 8px;
                         text-align: left;
+                        
                         @include media-breakpoint-up(md) {
                             font-size: 24px;
                             font-weight: 700;
@@ -128,6 +130,211 @@ section.home {
                     }
                 }
             }
+        }
+    }
+}
+
+// pips styling
+
+.btn-pips{
+    line-height: 1.5rem;
+    padding: 9px 17px;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(59,130, 246);
+
+    .btn-green{
+        background-color: rgb(34,197,94);
+    }
+}
+
+
+.banner {
+    background-image: url("#{$static-path}/images/pips-assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    padding: 4rem;
+
+    .banner-container{
+        padding: 4rem 2rem;
+        margin: 0 auto;
+
+        .banner-text{
+            width: 66.66667%;
+
+            .sub-heading{
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+
+            .heading-display-3{
+                text-align: left;
+                margin: 3rem 0;
+                font-size: 3.75rem;
+                line-height: 1;
+                color: white;
+            }
+
+            .text-lead{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .action-buttons{
+                margin-top: 2rem;
+                & a:first-child{
+                    margin-right: 10px; 
+                }
+            }
+
+        }
+    }
+}
+
+.welcome-section{
+    padding: 4rem;
+    max-width: 100%;
+    & > div{
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+
+        h2{
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            text-align: center;
+            font-weight: 700;
+            color: rgb(30,58,138);
+        }
+        p{
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .grid{
+            display: grid;
+            gap: 1rem;
+
+            h5{
+                font-weight: 700;
+                font-size: 1rem;
+            }
+        }
+
+        .grid-cols-2{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .video-frame {
+            width: 100%;
+            height: 315px;
+            margin: 4px 0;
+            border: none;
+        }
+    }
+}
+
+.platform-section{
+    padding: 4rem;
+    background: rgb(245,245,245);
+    & .platform-container{
+        margin: auto;
+        padding: 4rem 2rem;
+        max-width: 80rem;
+        text-align: center;
+
+        .text-heading{
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: rgb(30,58, 138);
+        }
+
+        .text-para{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        boxes{ margin-top: 2rem; }
+        .grid {
+            display: grid;
+            gap: 1rem;
+            margin: 0 2rem;
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .card-box{
+            border-radius: .5rem;
+            background-color: rgb(255,255, 255);
+            border: 1px solid rgb(229, 229, 229);
+            padding-bottom: 2.75rem;
+
+            .w-32{
+                width: 8rem;
+            }
+            .h-32{
+                height: 8rem;
+            }
+
+            & > div{
+                padding: 1.5rem;
+
+                h4{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+
+    }
+}
+
+.partners-section{
+    padding: 4rem;
+    background: rgb(245 ,245 ,245);
+    text-align: center;
+    & > .partners-container{
+        max-width: 80rem;
+        padding: 4rem 2rem;
+        margin: 0 auto;
+
+        .heading{
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: rgb(30, 58 ,138);
+            font-weight: bold;
+        }
+        .grid{
+            display: grid;
+            gap: 1rem;
+            margin: 4rem;
+        }
+
+        .grid-cols-2{
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        img{
+            height: 8rem;
+            margin: 0 auto;
         }
     }
 }

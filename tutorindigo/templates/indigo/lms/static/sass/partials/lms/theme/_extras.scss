@@ -33,6 +33,7 @@ body, body.view-profile {
 
 h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   font-family: $font-family-title;
+  font-weight: 700;
 }
 
 // It is necessary to specify `:not(.courseware) >` in order to not affect the style
@@ -289,6 +290,4 @@ nav.wrapper-preview-menu {
 @import '../../../courseware/about';
 @import '../../../courseware/bookmarks';
 @import '../../../home/home';
-
-
 
