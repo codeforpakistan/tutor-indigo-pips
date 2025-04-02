@@ -26,8 +26,7 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
         # tutor config save --set INDIGO_FOOTER_NAV_LINKS=[]
         "FOOTER_NAV_LINKS": [
             {"title": "About Us", "url": "/about"},
-            {"title": "Blog", "url": "/blog"},
-            {"title": "Donate", "url": "/donate"},
+            {"title": "Contributors", "url": "/contributors"},
             {"title": "Terms of Sevice", "url": "/tos"},
             {"title": "Privacy Policy", "url": "/privacy"},
             {"title": "Help", "url": "/help"},
@@ -140,7 +139,10 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
 hooks.Filters.ENV_PATCHES.add_item(("openedx-common-settings", '''                         
 ENABLE_COURSE_DISCOVERY = True
 MKTG_URL_LINK_MAP = {
-    "contributors" : "contributors.html"
+    "contributors" : "contributors.html",
+    "about" : "about.html",
+    "tos" : "tos.html",
+    "privacy" : "privacy.html",
 }
 LOGO_URL = '/theming/asset/images/pips-assets/logo.svg'
 '''))

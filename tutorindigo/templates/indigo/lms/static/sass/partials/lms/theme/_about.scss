@@ -1,0 +1,122 @@
+.about-article{
+    padding: 4rem 0;
+
+    .uppercase { text-transform: uppercase; }
+    
+
+    .text-description{
+        margin: 0 auto;
+        max-width: 80rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+
+        h1{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    .lms-offer{
+        padding: 4rem 0;
+
+        & > div{
+            margin: 0 auto;
+            max-width: 80rem;
+            padding: 0 2rem;
+            
+            .lms-heading{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .box-container{
+                margin-top: 2rem;
+
+                .box-card{
+                    border-radius: .5rem;
+                    padding: 1.5rem;
+                    padding-bottom: 2.5rem;
+
+                    h3, p{
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .benefit-section{
+        padding: 4rem 0;
+
+        & > div{
+            margin: 0 auto;
+            max-width: 80rem;
+            padding: 0 2rem;
+
+            .benefit-heading{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .benefit-box { 
+                margin-top: 2rem; 
+                
+                .box-card{
+                    padding: 1.5rem;
+                    
+                    
+
+                    img{
+                        width: 8rem;
+                        height: 8rem; 
+                        margin: 0 auto;
+                    }
+                    h3{
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                        margin: 4px 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .future-vision{
+        padding: 4rem 0;
+
+        & > div{
+            margin: 0 auto;
+            max-width: 80rem;
+            padding: 0 2rem;
+            text-align: center;
+
+            .text-heading{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .box-container{
+                margin: 2rem 0;
+
+                .box-card{
+                    padding: 1.5rem;
+                    border: 1px solid rgb(229, 229, 229);
+                    border-radius: .5rem;
+
+                    h3{
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        text-align: left;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

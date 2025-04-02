@@ -1,0 +1,48 @@
+.container-contributor{
+    padding: 4rem 0;
+    
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .contributor-div{
+        margin: 0 auto;
+        max-width: 80rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+
+        h1{
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-weight: 18px;
+            line-height: 24px;
+        }
+
+        .box-container{
+            margin-top: 2rem;
+            .box-card{
+                border: 1px solid rgb(229, 229, 229);
+                border-radius: .5rem;
+                padding: 1.5rem;
+                padding-bottom: 2.5rem;
+
+                & > div { text-align: center; }
+
+                img{
+                    width: 8rem;
+                    height: 8rem;
+                    margin: 0 auto;
+                }
+
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

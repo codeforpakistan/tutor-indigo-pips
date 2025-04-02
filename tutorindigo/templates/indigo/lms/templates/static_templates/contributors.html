@@ -6,12 +6,32 @@
 <%block name="pagetitle">${_("Contributors")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("Contributors")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
+    <section class="container-contributor">
+        <article class="">
+            <div class="contributor-div">
+                <h1 class="text-2xl font-bold uppercase text-blue text-left">Our Partners &amp; Contributors</h1>
+                <p class="text-lg">We would like to thank all our partners and contributors in this venture.</p>
+                <div class="grid grid-cols-3 box-container">
+                    <div class="bg-gray box-card">
+                        <div class=""><img src="${static.url('images/pips-assets/undp.svg')}">
+                            <h5 class="text-2xl font-bold text-center">UNDP</h5>
+                            <p class="text-center">For Supporting policy &amp; capacity building</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray box-card">
+                        <div ><img src="${static.url('images/pips-assets/cfp.svg')}">
+                            <h5 class="text-2xl font-bold text-center">Code for Pakistan</h5>
+                            <p class="text-center">For Providing technical support</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray box-card">
+                        <div ><img src="${static.url('images/pips-assets/contributors.svg')}" alt="Learning">
+                            <h5 class="text-2xl font-bold text-center">Team Members &amp; Content Contributors </h5>
+                            <p class="text-center">Names and Roles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 </main>

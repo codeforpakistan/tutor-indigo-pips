@@ -283,6 +283,48 @@ nav.wrapper-preview-menu {
   }
 }
 
+.bg-blue {
+  background-color: rgb(59, 130, 246);
+}
+
+.bg-green {
+  background-color: rgb(34, 197, 94);
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
+.text-blue {
+  color: #1e3a8a;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @import '../../../extra/footer';
 @import '../../../extra/header';
 @import '../../../dashbord/dashbord';
@@ -290,4 +332,7 @@ nav.wrapper-preview-menu {
 @import '../../../courseware/about';
 @import '../../../courseware/bookmarks';
 @import '../../../home/home';
-
+@import './about';
+@import './contributor';
+@import './tos';
+@import './contact';

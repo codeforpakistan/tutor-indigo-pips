@@ -143,10 +143,13 @@ section.home {
     border-radius: 6px;
     font-weight: 600;
     color: white;
-    background-color: rgb(59,130, 246);
+    background: rgb(59,130, 246);
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
 
     &.btn-green{
-        background-color: rgb(34,197,94);
+        background: rgb(34,197,94);
     }
 }
 

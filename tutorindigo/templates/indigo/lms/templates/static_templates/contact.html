@@ -6,16 +6,81 @@
 <%block name="pagetitle">${_("Contact Us")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("Contact Us")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/contact.svg')}" alt="Runs on Tutor" />
+    <section class="container-contact">
+        <div class="">
+            <div class="grid grid-cols-2">
+                <form class="contact-us">
+                    <h1 class="text-2xl font-bold uppercase text-blue text-left">Contact Us</h1>
+                    <div class="relative input-fields">
+                        <input type="text" placeholder="Your name"
+                            class=""
+                            value="">
+                        </div>
+                    <div class="relative input-fields">
+                        <input type="text" placeholder="Email address"
+                            class="" value="" />
+                        </div>
+                    <div class="relative input-fields"><input type="text" placeholder="Your message"
+                            class="" value="" />
+                        </div>
+                        <button type="button"
+                        class="btn btn-pips"><span
+                            class="get-in-touch">Get in Touch</span></button>
+                    <address class="address">
+                        <p class="strong">Pakistan Institute for Parliamentary Services (PIPS)</p>
+                        <p class="">Services Road, Ataturk Avenue, Sector F-5/2, Islamabad</p>
+                        <p class="">Phone : +92 51 9091000, +92 51 9091111</p>
+                        <p class="">Fax: +92 51 9091507</p>
+                    </address>
+                </form>
+                <div class="faqs">
+                    <h2 class="text-2xl font-bold uppercase text-blue">Frequently Asked Questions</h2>
+                    <div class="w-full">
+                        <div data-headlessui-state="" class="w-full">
+                        <button type="button">
+                            <span class="text-left break-all">How do I enroll in a course?</span>
+                            <span></span>
+                        </button>
+                            <div class="" style="height: 0px; display: none;">
+                                <div>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae
+                                    arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus
+                                    diam vel metus tempus vulputate.</div>
+                            </div>
+                        </div>
+                        <div data-headlessui-state="" class="w-full flex flex-col"><button type="button"
+                                class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-primary-500 dark:text-primary-400 bg-primary-50 hover:bg-primary-100 disabled:bg-primary-50 aria-disabled:bg-primary-50 dark:bg-primary-950 dark:hover:bg-primary-900 dark:disabled:bg-primary-950 dark:aria-disabled:bg-primary-950 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center mb-1.5 w-full"
+                                id="headlessui-disclosure-button-v-0-2" aria-expanded="false" data-headlessui-state=""
+                                aria-controls="headlessui-disclosure-panel-v-0-3"><span
+                                    class="text-left break-all line-clamp-1">What if I forget my password?</span><span
+                                    class="iconify i-heroicons:chevron-down-20-solid h-5 w-5 ms-auto transform transition-transform duration-200 flex-shrink-0"
+                                    aria-hidden="true"></span></button>
+                            <div class="" style="height: 0px; display: none;">
+                                <div id="headlessui-disclosure-panel-v-0-3" data-headlessui-state=""
+                                    class="text-sm text-gray-500 dark:text-gray-400 pt-1.5 pb-3">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae
+                                    arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus
+                                    diam vel metus tempus vulputate.</div>
+                            </div>
+                        </div>
+                        <div data-headlessui-state="open" class="w-full flex flex-col"><button type="button"
+                                class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-primary-500 dark:text-primary-400 bg-primary-50 hover:bg-primary-100 disabled:bg-primary-50 aria-disabled:bg-primary-50 dark:bg-primary-950 dark:hover:bg-primary-900 dark:disabled:bg-primary-950 dark:aria-disabled:bg-primary-950 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center mb-1.5 w-full"
+                                id="headlessui-disclosure-button-v-0-4" aria-expanded="true" data-headlessui-state="open"
+                                aria-controls="headlessui-disclosure-panel-v-0-5"><span
+                                    class="text-left break-all line-clamp-1">Is certification provided for completed
+                                    courses?</span><span
+                                    class="iconify i-heroicons:chevron-down-20-solid -rotate-180 h-5 w-5 ms-auto transform transition-transform duration-200 flex-shrink-0"
+                                    aria-hidden="true"></span></button>
+                            <div class="" style="height: auto;">
+                                <div class="faqs-description">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae
+                                    arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus
+                                    diam vel metus tempus vulputate.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
