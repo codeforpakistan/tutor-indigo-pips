@@ -130,6 +130,9 @@ section.home {
                     }
                 }
             }
+        @include media-breakpoint-down(lg) {
+            padding: 2rem;
+        }
         }
     }
 }
@@ -138,19 +141,29 @@ section.home {
 
 .btn-pips{
     line-height: 1.5rem;
-    padding: 9px 17px;
+    padding: 0.625rem 0.875rem;
     font-size: 1rem;
     border-radius: 6px;
     font-weight: 600;
     color: white;
     background: rgb(59,130, 246);
-    box-shadow: none;
+    box-shadow: 0 0 #000, 0 0 #000, 0 1px 2px 0 #000000;
     border: none;
     text-shadow: none;
 
     &.btn-green{
         background: rgb(34,197,94);
+
+        &:hover{
+            background: rgb(33, 169, 83);
+        }
     }
+
+    &:hover{
+        background: rgb(62, 121, 215);
+    }
+
+    &:active, &:focus{ box-shadow: none; }
 }
 
 
@@ -161,16 +174,21 @@ section.home {
     color: white;
 
     padding: 4rem;
+    @include media-breakpoint-down(xl) {
+        padding: 2rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 1rem;
+    }
 
     .banner-container{
         padding: 4rem 2rem;
         margin: 0 auto;
+        width: 66.66667%;
 
         .banner-text{
-            width: 66.66667%;
-
             .sub-heading{
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 line-height: 2rem;
             }
 
@@ -194,6 +212,41 @@ section.home {
                 }
             }
 
+            @include media-breakpoint-down(xl) {
+                .sub-heading{
+                    font-size: 1rem;
+                }
+                .heading-display-3{
+                    font-size: 2.25rem;
+                    line-height: 2.5rem;
+                    margin: 2rem 0;
+                }
+                .text-lead{
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                }
+                .action-buttons {
+                    margin-top: 1.5rem;
+
+                    & a:first-child {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding: 2rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 2rem 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+            width: 100%;
         }
     }
 }
@@ -239,6 +292,39 @@ section.home {
             margin: 4px 0;
             border: none;
         }
+
+        @include media-breakpoint-down(xl) {
+            padding: 2rem;
+            h2 {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: left;
+            }
+        
+            p {
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-align: left !important;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 2rem 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+            .grid-cols-2 {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 2rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 1rem;
     }
 }
 
@@ -306,7 +392,62 @@ section.home {
             }
         }
 
+        @include media-breakpoint-down(xl) {
+            padding: 2rem;
+            
+            .text-heading {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: left !important;
+            }
+            
+            .text-para {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                text-align: left !important;
+            }
+        
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-align: left !important;
+            }
+        
+            boxes {
+                margin-top: 1rem;
+            }
+        
+            .grid {
+                margin: 0;
+            }
+        
+            .card-box{
+                padding-bottom: 1.5rem;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 2rem 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+            .grid-cols-2 {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+            .card-box{
+                padding: 0;
+                margin-bottom: 0 !important; 
+            }
+        }
     }
+
+    @include media-breakpoint-down(xl) {
+        padding: 2rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 1rem;
+    }   
 }
 
 .partners-section{
@@ -328,16 +469,57 @@ section.home {
         .grid{
             display: grid;
             gap: 1rem;
-            margin: 4rem;
+            margin: 4rem auto;
+            text-align: center;
+            max-width: 80rem;
         }
 
         .grid-cols-2{
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
         img{
             height: 8rem;
             margin: 0 auto;
+        }
+
+        .contributors{
+            text-align: center;
+            padding-top: 1.5rem;
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding: 2rem;
+            .heading {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: left;
+            }
+            .grid {
+                margin: 4rem 0;
+                max-width: 100%;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 2rem 1.5rem;
+            .grid {
+                margin: 2rem 0;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 2rem;
+        text-align: left;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 1rem;
+        .grid{gap: 2.5rem;}
+        .grid-cols-2 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
         }
     }
 }

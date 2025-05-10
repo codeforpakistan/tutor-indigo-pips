@@ -2,13 +2,16 @@
 .wrapper-footer {
     padding: 25px 0;
     border-top: 1px solid #E5E7EB;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: 45px 0;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 1rem 0;
     }
 }
 footer.tutor-container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
     max-width: 80rem;
     text-align: center;
     box-sizing: border-box;
@@ -28,7 +31,7 @@ footer.tutor-container {
                 margin: 0 0 15px;
             }
             @include media-breakpoint-up(lg) {
-                float: left;
+                float: none;
             }
         }
     }
@@ -69,16 +72,26 @@ footer.tutor-container {
         overflow: hidden;
         ol {
             text-align: right;
+            @include media-breakpoint-down(xl) {
+                text-align: left;
+            }
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+                margin: 0.275rem 0;
+            }
             li {
                 display: inline-block;
                 vertical-align: top;
                 padding: 0 8px;
                 font-size: 14px;
                 line-height: 20px;
-                @include media-breakpoint-up(md) {
-                    padding: 0 12px;
+                @include media-breakpoint-down(xl) {
+                    padding: 0 0.5rem;
                     font-size: 16px;
                     line-height: 24px;
+                    &:first-child {
+                        padding-left: 0;
+                    }
                 }
                 a {
                     color: #000;
@@ -94,21 +107,34 @@ footer.tutor-container {
     }
     .copyright-socials{
         .copyright-site {
-                display: block;
-                color: #000;
-                line-height: 1.25rem;
-                max-width: 750px;
-            }
+            display: block;
+            color: #000;
+            line-height: 1.25rem;
+            max-width: 750px;
+        }
 
         .social{
             a {
                 padding: 0.375rem 0.625rem;
                 img{
-                width: 1.25rem;
-                height: 1.25rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+            @include media-breakpoint-down(xl) {
+                margin-top: 1rem;
+                a:first-child{
+                    padding-left: 0;
+                }
             }
         }
+
+        @include media-breakpoint-down(xl) {
+            flex-direction: column; 
+
+            .copyright-site {
+                font-size: 0.875rem;
+            }
         }
     }
-    
 }

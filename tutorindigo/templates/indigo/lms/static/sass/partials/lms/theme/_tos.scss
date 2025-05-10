@@ -62,4 +62,12 @@
             opacity: .75;
         }
     }
+
+    @include media-breakpoint-down(md) {
+        padding: 1rem 0;
+
+        &>div {
+            padding: 0 1rem;
+        }
+    }
 }

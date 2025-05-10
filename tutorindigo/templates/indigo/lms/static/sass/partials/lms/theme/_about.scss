@@ -19,6 +19,10 @@
             font-size: 16px;
             line-height: 21px;
         }
+        @include media-breakpoint-down(md) {
+            padding: 0 1rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     .lms-offer{
@@ -46,6 +50,16 @@
                         font-size: 1rem;
                         line-height: 1.25rem;
                     }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem 0;
+            & > div { 
+                padding: 0 1rem; 
+                .box-container{
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
                 }
             }
         }
@@ -85,6 +99,18 @@
                 }
             }
         }
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem 0;
+
+            &>div {
+                padding: 0 1rem;
+
+                .benefit-box {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+            }
+        }
     }
 
     .future-vision{
@@ -118,5 +144,30 @@
                 }
             }
         }
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem 0;
+
+            &>div {
+                padding: 0 1rem;
+
+                .box-container {
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+                    .box-card{
+                        padding: 1.25rem 1rem;
+
+                        h3 { 
+                            font-size: 1rem; 
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 1.5rem 0;
     }
 }

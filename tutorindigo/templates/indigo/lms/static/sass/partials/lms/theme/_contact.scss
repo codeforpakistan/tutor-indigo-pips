@@ -22,7 +22,7 @@
         }
 
         .input-fields{
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
             input{
                 font-size: 1rem;
                 line-height: 1.5rem;
@@ -42,7 +42,7 @@
         .address{
             margin-top: 2rem;
             p {
-                line-height: 28px;
+                line-height: 25px;
                 margin: 0;
             }
         }
@@ -53,5 +53,21 @@
         padding: .375rem 0;
         font-size: .875rem;
         line-height: 1.25rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 1.5rem 0;
+
+        & .btn{
+            box-shadow: none; 
+        }
+
+        &>div {
+            padding: 0 1rem;
+
+            .grid{
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
     }
 }
