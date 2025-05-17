@@ -118,7 +118,18 @@
       </nav>
       {% endif %}
     </div>
-    <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
+    <div class="d-flex justify-content-between copyright-socials">
+      <p class="copyright-site">© 2025, All Rights Reserved. Pakistan Institute for Parliamentary Services (PIPS)
+    <br />Disclaimer: This platform is an initiative by PIPS to provide online learning resources.</p>
+    <div class="social">
+      <a href="#">
+        <img src="${static.url('images/pips-assets/twitter.svg')}" alt="twitter" />
+      </a>
+      <a href="#">
+        <img src="${static.url('images/pips-assets/instagram.svg')}" alt="instagram" />
+      </a>
+    </div>
+  </div>
     % endif
       <div class="colophon">
        

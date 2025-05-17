@@ -6,16 +6,112 @@
 <%block name="pagetitle">${_("About")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">This is the about page.</%block>
-        </p>
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
-        </div>
+    <section class="container-about">
+        <article class="about-article">
+            <div class="text-description">
+                <h1 class="font-bold uppercase text-blue text-left">About PIPS e-Learning Platform</h1>
+                <p>The PIPS E-Learning Portal is an initiative of the Pakistan Institute for Parliamentary Services (PIPS) aimed
+                    at providing high-quality training and knowledge resources for parliamentarians, parliamentary staff, and
+                    governance professionals. This platform offers structured courses, expert insights, and certification
+                    opportunities to enhance professional skills in legislative processes, policymaking, and governance.</p>
+                
+            </div>
+            <section class="lms-offer bg-gray">
+                <div>
+                    <h2 class="lms-heading text-blue uppercase">What does the LMS offer?</h2>
+                    <div class="grid grid-cols-4 box-container">
+                        <div
+                            class="box-card bg-white">
+                            
+                            <div class="">
+                                <h3 class="font-bold bg-white">Structure Self-Paced Courses</h3>
+                                <p>Organized lessons that let you learn at your own pace.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="box-card bg-white">
+                            
+                            <div class="">
+                                <h3 class="font-bold">Expert-led Traning Programs</h3>
+                                <p>Interactive sessions led by industry professionals.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="box-card bg-white">
+                            
+                            <div class="">
+                                <h3 class="font-bold">Interactive Learning Materials</h3>
+                                <p>Engaging multimedia content that keeps you involved such as videos, PDFs, quizzes, etc.</p>
+                                
+                            </div>
+                        </div>
+                        <div
+                            class="box-card bg-white">
+                            
+                            <div class="">
+                                <h3 class="font-bold">Recognized Certifications for Skill Enhancement</h3>
+                                <p>Accredited credentials that boost your career prospects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="benefit-section text-center">
+                <div>
+                    <h2 class="uppercase benefit-heading text-blue">Who Can Benefit?</h2>
+                    <div class="grid grid-cols-4 benefit-box">
+                        <div class="box-card">
+                            <div class=""><img
+                                    src="${static.url('images/pips-assets/benefit-1.svg')}"
+                                    alt="Learning" class="box-image">
+                                <h3 class="font-bold">Parliamentarians and Parliamentary Staff</h3>
+                            </div>
+                        </div>
+                        <div class="box-card">
+                            <div class=""><img
+                                    src="${static.url('images/pips-assets/benefit-2.svg')}" alt="Learning" class="box-image">
+                                <h3 class="font-bold">Government Officers and Policy Experts</h3>
+                            </div>
+                        </div>
+                        <div class="box-card">
+                            <div class=""><img src="${static.url('images/pips-assets/benefit-3.svg')}" alt="Learning"
+                                    class="box-image">
+                                <h3 class="font-bold">Researchers, Academics, and Students</h3>
+                            </div>
+                        </div>
+                        <div class="box-card">
+                            <div class=""><img src="${static.url('images/pips-assets/benefit-4.svg')}" alt="Learning"
+                                    class="box-image">
+                                <h3 class="font-bold">Anyone interested in governance, law, and public policy</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="future-vision bg-gray">
+                <div>
+                    <h2 class="text-heading uppercase text-blue">Acknowledgment &amp; Future Vision</h2>
+                    <div class="box-container grid grid-cols-2">
+                        <div class="box-card bg-white">
+                            <div class="">
+                                <h3>Recognition of contributors, facilitators, and development
+                                    partners</h3>
+                            </div>
+                        </div>
+                        <div class="box-card bg-white">
+                            <div class="">
+                                <h3 >Commitment to continuous growth with additional courses and
+                                    training opportunities</h3>
+                            </div>
+                        </div>
+                    </div><a
+                        class="btn btn-pips start-learning-btn"
+                        href="/pips-edx/courses" as="button" type="button" 
+                        exacthash="false">Start Learning
+                        Today!</a>
+                </div>
+            </section>
+        </article>
+
     </section>
 </main>
