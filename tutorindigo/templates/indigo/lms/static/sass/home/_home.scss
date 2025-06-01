@@ -174,7 +174,7 @@ section.home {
     color: white;
 
     padding: 4rem;
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
         padding: 2rem;
     }
     @include media-breakpoint-down(md) {
@@ -212,7 +212,7 @@ section.home {
                 }
             }
 
-            @include media-breakpoint-down(xl) {
+            @include media-breakpoint-down(lg) {
                 .sub-heading{
                     font-size: 1rem;
                 }
@@ -236,15 +236,15 @@ section.home {
 
         }
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             padding: 2rem;
             margin-left: 0;
             margin-right: 0;
         }
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             padding: 2rem 1.5rem;
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             padding: 1rem;
             width: 100%;
         }
@@ -293,7 +293,7 @@ section.home {
             border: none;
         }
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             padding: 2rem;
             h2 {
                 font-size: 1.5rem;
@@ -309,10 +309,10 @@ section.home {
                 text-align: left !important;
             }
         }
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             padding: 2rem 1.5rem;
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             padding: 1rem;
             .grid-cols-2 {
                 grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -320,10 +320,10 @@ section.home {
         }
     }
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
         padding: 2rem;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         padding: 1rem;
     }
 }
@@ -392,7 +392,7 @@ section.home {
             }
         }
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             padding: 2rem;
             
             .text-heading {
@@ -427,10 +427,10 @@ section.home {
                 padding-bottom: 1.5rem;
             }
         }
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             padding: 2rem 1.5rem;
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             padding: 1rem;
             .grid-cols-2 {
                 grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -442,10 +442,10 @@ section.home {
         }
     }
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
         padding: 2rem;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         padding: 1rem;
     }   
 }
@@ -488,7 +488,7 @@ section.home {
             padding-top: 1.5rem;
         }
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             padding: 2rem;
             .heading {
                 font-size: 1.5rem;
@@ -500,22 +500,22 @@ section.home {
                 max-width: 100%;
             }
         }
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             padding: 2rem 1.5rem;
             .grid {
                 margin: 2rem 0;
             }
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             padding: 1rem;
         }
     }
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
         padding: 2rem;
         text-align: left;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         padding: 1rem;
         .grid{gap: 2.5rem;}
         .grid-cols-2 {

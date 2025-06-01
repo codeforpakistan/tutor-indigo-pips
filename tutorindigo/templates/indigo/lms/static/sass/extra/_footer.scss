@@ -72,10 +72,10 @@ footer.tutor-container {
         overflow: hidden;
         ol {
             text-align: right;
-            @include media-breakpoint-down(xl) {
+            @include media-breakpoint-down(lg) {
                 text-align: left;
             }
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(md) {
                 text-align: center;
                 margin: 0.275rem 0;
             }
@@ -85,7 +85,7 @@ footer.tutor-container {
                 padding: 0 8px;
                 font-size: 14px;
                 line-height: 20px;
-                @include media-breakpoint-down(xl) {
+                @include media-breakpoint-down(lg) {
                     padding: 0 0.5rem;
                     font-size: 16px;
                     line-height: 24px;
@@ -121,7 +121,7 @@ footer.tutor-container {
                     height: 1.25rem;
                 }
             }
-            @include media-breakpoint-down(xl) {
+            @include media-breakpoint-down(lg) {
                 margin-top: 1rem;
                 a:first-child{
                     padding-left: 0;
@@ -129,7 +129,7 @@ footer.tutor-container {
             }
         }
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(lg) {
             flex-direction: column; 
 
             .copyright-site {
