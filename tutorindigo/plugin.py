@@ -8,6 +8,10 @@ from tutor import hooks
 from tutor.__about__ import __version_suffix__
 
 from .__about__ import __version__
+from tutormfe.hooks import MFE_APPS
+
+
+
 
 # Handle version suffix in nightly mode, just like tutor core
 if __version_suffix__:
@@ -68,6 +72,16 @@ with open(
     encoding="utf-8",
 ) as task_file:
     hooks.Filters.CLI_DO_INIT_TASKS.add_item(("lms", task_file.read()))
+
+
+@MFE_APPS.add()
+def _add_my_mfe(mfes):
+    mfes["learner-dashboard"] = {
+        "repository": "https://github.com/hinakhadim/frontend-app-learner-dashboard.git",
+        "port": 2001,
+        "version": "quince", # optional, will default to the Open edX current tag.
+    }
+    return mfes
 
 
 # Override openedx & mfe docker image names
